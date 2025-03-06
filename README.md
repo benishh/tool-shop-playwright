@@ -7,7 +7,7 @@ The purpose of this repository is to practice end-to-end (E2E) test automation o
 ## Features Automated
 
 ## Teck Stack
-- Playwright ()
+- Playwright
 - Typescript 
 - Node.js 
 - VS Code   
