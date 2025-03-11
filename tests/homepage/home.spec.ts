@@ -16,11 +16,10 @@ await expect(page).toHaveTitle('Practice Software Testing - Toolshop - v5.0');
 //Search for Thor Hammer and check the result
 await page.getByPlaceholder("Search").fill('Thor Hammer');
 await page.getByRole('button', {name: "Search"}).click();
-await page.getByRole('heading', {name: "Thor Hammer"});
+await expect(page.getByAltText('Thor Hammer')).toBeVisible();
+
 
 // const ProductGrid = await expect(page.locator('.col-md-9'));
 // await ProductGrid.tohave
-
-
 });
 
